@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin - Dashboard</title>
+	<link href="{{ url_for('static', filename='admin/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='admin/font-awesome.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='admin/datepicker3.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='admin/styles.css') }}" rel="stylesheet">
+
+<!--Custom Font-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="{{ url_for('static', filename='js/html5shiv.js') }}"></script>
+<script src="{{ url_for('static', filename='js/respond.min.js') }}"></script>
+<![endif]-->
+
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span></span>Admin</a>
+				<ul class="nav navbar-top-links navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+							<em class="fa fa-envelope"></em><span class="label label-danger">!</span>
+						</a>
+						<ul class="dropdown-menu dropdown-messages">
+							{% for contact in contacts %}
+							<li>
+								<div class="dropdown-messages-box">
+									<a href="profile.html" class="pull-left">
+									</a>
+									<div class="message-body">
+										<a href="#"><strong>{{ contact[0] }}</strong> sent you a message</a>
+										<br /><small class="text-muted">{{ contact[1] }}</small>
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+			</div>
+			<div class="profile-usertitle">
+				<div class="profile-usertitle-name">Dashboard</div>
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+		<ul class="nav menu">
+			<li class="active"><a href="/loginadmin"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<li><a href="/users"><em class="fa fa-user">&nbsp;</em> users</a></li>
+			<li><a href="/diseaseinfo"><em class="fa fa-tint">&nbsp;</em> Diseases information</a></li>
+			<li><a href="/supplement" style="
+				left: -3px;
+			"><em class="fa fa-medkit"></em> Supplement</a></li>
+			<li>
+				<a href="#" id="delete-link" style="left: -3px;">
+					<em class="fa fa-trash">&nbsp;</em> Delete database
+				</a>
+			</li>
+			
+			
+			
+			<li><a href="/admin"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#">
+					<em class="fa fa-home"></em>
+				</a></li>
+				<li class="active">Dashboard</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Dashboard</h1>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="panel panel-container">
+			<div class="row">
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-teal panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl fa-shopping-cart color-blue"></em>
+							<div class="large">{{ gerant }}</div>
+							<div class="text-muted">Mangers</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-blue panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl fa-comments color-orange"></em>
+							<div class="large">{{ eventandpub }}</div>
+							<div class="text-muted">Posts&Events</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-orange panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl fa-users color-teal"></em>
+							<div class="large">{{ users }}</div>
+							<div class="text-muted">Users</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-orange panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl fa-users color-teal"></em>
+							<div class="large">{{ donneandneed }}</div>
+							<div class="text-muted">blood Donation&Request</div>
+						</div>
+					</div>
+				</div>
+				
+			</div><!--/.row-->
+		</div>
+		
+		</div><!--/.row-->
+	</div>	<!--/.main-->
+	
+	<script src="{{ url_for('static', filename='js/admin/jquery-1.11.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/chart.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/chart-data.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/easypiechart.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/easypiechart-data.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/bootstrap-datepicker.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin/custom.js') }}"></script>
+
+	<script>
+		window.onload = function () {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+};
+	</script>
+ <script>
+	document.getElementById('delete-link').addEventListener('click', function(event) {
+		event.preventDefault(); // Prevent the default link behavior
+		showConfirmationDialog();
+	});
+
+	function showConfirmationDialog() {
+		if (confirm("Are you sure you want to delete the database?")) {
+			fetch('/deletedatabase', {
+				method: 'GET'
+			}).then(response => {
+				if (response.redirected) {
+					window.location.href = response.url;
+				} else {
+					alert("Failed to delete the database.");
+				}
+			}).catch(error => {
+				console.error('Error:', error);
+				alert("An error occurred while deleting the database.");
+			});
+		} else {
+			alert("Action canceled.");
+		}
+	}
+</script>	
+</body>
+</html>

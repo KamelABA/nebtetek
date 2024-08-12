@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0545)https://auth.openai.com/authorize?client_id=TdJIcbe16WoTHtN95nyywh5E4yOo6ItG&scope=openid%20email%20profile%20offline_access%20model.request%20model.read%20organization.read%20organization.write&response_type=code&redirect_uri=https%3A%2F%2Fchatgpt.com%2Fapi%2Fauth%2Fcallback%2Flogin-web&audience=https%3A%2F%2Fapi.openai.com%2Fv1&device_id=4e73e953-10bf-4157-8502-cf1278d64e80&prompt=login&screen_hint=login&state=Qn1LJmEw2yQ9aL62bhJiA_UndCsFFLqs0MoUD2bjGs8&code_challenge=rM_PJHPp0xNbHVNvXJNgywIXXrMRGMczR1rnvghKxdg&code_challenge_method=S256 -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DetectPlant</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Login.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .input-wrapper .email-input.error {
+            border-color: rgba(163, 6, 6, 0.749);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="root">
+        <div class="page-wrapper">
+            <header class="oai-header">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="img-fluid"
+                    style="height: 135px;width: 135px;">
+
+
+            </header>
+            <main class="main-container">
+                <section class="content-wrapper" style="
+                    top: -100px;
+                ">
+                    <div class="title-wrapper">
+                        <h1 class="title">Welcome
+                            back</h1>
+                    </div>
+                    <div class="login-container">
+                        <form action="/checklogin" method="post">
+                            <div class="login-container" style="margin-left: -40px;">
+                                <div class="input-wrapper">
+                                    <input class="email-input email-input {% if error %}error{% endif %}"
+                                        inputmode="email" type="email" id="email-input" name="email"
+                                        autocomplete="username" autocapitalize="none" spellcheck="false" required
+                                        placeholder=" " data-toggle="tooltip" data-placement="right"
+                                        title="{% if error %}{{ error }}{% endif %}">
+                                    <label class="email-label" for="email-input">Email
+                                        address</label>
+                                    {% if error %}
+                                    <div id="error-alert" class="alert alert-danger" role="alert">
+                                        {{ error }}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <script>
+                                    setTimeout(function () {
+                                        var alertDiv = document.getElementById('error-alert');
+                                        alertDiv.style.transition = 'opacity 1s ease';
+                                        alertDiv.style.opacity = '0';
+                                        setTimeout(function () {
+                                            alertDiv.remove();
+                                        }, 1000);
+                                    }, 3000);
+                                </script>
+                                <div class="input-wrapper">
+                                    <input class="email-input" inputmode="text" type="password" id="password-input"
+                                        name="password" autocomplete="current-password" autocapitalize="none"
+                                        spellcheck="false" required placeholder=" ">
+                                    <label class="email-label" for="password-input">Password*</label>
+                                </div>
+                                <button type="submit" class="continue-btn">Continue</button>
+
+                            </div>
+                        </form>
+                        <p class="other-page">Don't have an account? <a class="other-page-link" href="/signup">
+                                Sign
+                                Up</a></p>
+                        <script>
+
+                        </script>
+</body>
+
+</html>

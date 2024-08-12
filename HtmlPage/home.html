@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Plants Diseases Website ynae - Home</title>
+
+        <link rel="stylesheet" type="text/css"
+            href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" type="text/css"
+            href="{{ url_for('static', filename='responsive-mobile.css') }}">
+        <link rel="stylesheet" type="text/css"
+            href="{{ url_for('static', filename='responsive-tablet.css') }}">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <style>
+        /*
+
+    Note: For display flex to work, you have to add 
+    
+    .your-class-name{
+      display:flex;
+    }
+    
+    .your-class-name > div {
+      position: static !important;
+    }
+    
+    */
+
+        /* place css code */
+    </style>
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Nunito Sans:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Noto Sans TC:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Kumbh Sans:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Manrope:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Open Sans:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Space Grotesk:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Arimo:100,200,300,400,500,600,700,800,900">
+
+    </head>
+
+    <body class="_home_container">
+
+        <div class="home-elem-1">
+            <nav class="navbar navbar-expand-lg home-elem-2" style="
+            margin-top: -20px;
+        ">
+                <a class="navbar-brand" href="/">
+                    <span class="home-elem-3">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="img-fluid" style="height: 80px;">
+                        <p>PlantDetect</p>
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse home-elem-4" id="navbarNav" style="
+                left: -100px;
+            ">
+                    <ul class="navbar-nav home-elem-5">
+                        <li class="nav-item home-elem-6 home-elem-6">
+                            <a class="nav-link link" href="/" target="_self">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item home-elem-7">
+                            <a class="nav-link link" href="#home-elem-15" target="_self">
+                                <p>About Us</p>
+                            </a>
+                        </li>
+                        <li class="nav-item home-elem-8">
+                            <a class="nav-link link" href="#home-elem-22" target="_self">
+                                <p>Faq</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="{{ url_for('detect_plant') }}" target="_self">
+                                <button class="navbar-item home-elem-9" id="detectPlantButton" style="left: 70px;">
+                                    <p style="margin-bottom: -5px; margin-top: -5px;">Detect Plant</p>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="nav-item"></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="home-elem-10">
+                <span class="home-elem-11" style="
+            margin-top: -90px;
+        ">
+                    <p>Protect Your Plants from Diseases </p>
+                </span>
+                <span class="home-elem-12" style="
+            padding-bottom: 0px;
+            height: 50px;
+        ">
+                    <p>Identify plant diseases early and ensure your garden
+                        thrives. Get started now. </p>
+                </span>
+            </div>
+            <div class="home-elem-13 home-elem-13">
+                <span class="home-elem-14 home-elem-14">
+                    <img
+                        src="{{ url_for('static', filename='assets/bdx13qcw3uvukirjsbah.jpg') }}">
+                </span>
+            </div>
+
+        </div>
+        <div class="home-elem-15" id="home-elem-15"> <span class="home-elem-18">
+                <p>Features of Our Service </p>
+            </span>
+            <div class="home-elem-16">
+                <div class="home-elem-17">
+                    <!-- <div class="home-elem-71"><iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/a2qNGl_uDbk?si=zNE_7yPm7UwtHDOU" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen=""></iframe></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="home-elem-88">
+            <div class="home-elem-77">
+                <div class="home-elem-76"> <span class="home-elem-74">
+                        <p>Nurturing the Well-Being of Your Plants</p>
+                        <p><br></p>
+                    </span><span class="home-elem-75">
+                        <p><br></p>
+                        <p>Maximize your plant's potential with
+                            'Green Guardians.' This compact guide delivers
+                            instant tips
+                            on watering, light, and soil care, making your
+                            journey to a green paradise a breeze. Elevate
+                            your plant parenting game in a snap!</p>
+                    </span><button class="home-elem-89"><a
+                            href="/leaf-detection" class="link" target="_self">
+                            <p>Learn more</p>
+                        </a></button></div><span class="home-elem-73"> <img
+                        src="{{ url_for('static', filename='assets/1_3_480x480webp_1703425656_56964.webp') }}">
+                </span>
+            </div>
+            <div class="home-elem-82"> <span class="home-elem-78">
+                    <img
+                        src="{{ url_for('static', filename='assets/previewpng_1703427021_40395.png') }}">
+                </span>
+                <div class="home-elem-81"> <span class="home-elem-79">
+                        <p>A Guide to Cultivating Crop Success for Farmers</p>
+                    </span><span class="home-elem-80">
+                        <p>Boost your farming success with 'Harvest Harmony.'
+                            This concise guide provides essential tips on
+                            soil health, irrigation, pest control, and
+                            sustainable practices. Elevate your crop game and
+                            cultivate a thriving, prosperous harvest</p>
+                    </span><button class="home-elem-90"><a
+                            href="/leaf-detection" class="link" target="_self">
+                            <p>Learn more</p>
+                        </a></button></div>
+            </div>
+            <div class="home-elem-87">
+                <div class="home-elem-86"> <span class="home-elem-84">
+                        <p>Comprehensive Plant Disease Database </p>
+                        <p><br></p>
+                    </span><span class="home-elem-85">
+                        <p>With a vast database of plant diseases, our system
+                            identifies diseases quickly and efficiently,
+                            saving your plants timely. </p>
+                        <p><br></p>
+                    </span><button class="home-elem-91"><a
+                            href="/leaf-detection" class="link" target="_self">
+                            <p>Learn more</p>
+                        </a></button></div><span class="home-elem-83"> <img
+                        src="{{ url_for('static', filename='assets/photosynthesis_2880_ledejpg_1703425615_64818.jpg') }}">
+                </span>
+            </div>
+        </div>
+        <div class="home-elem-117">
+            <div class="home-elem-116">
+                <div class="home-elem-102"> <span class="home-elem-92">
+                        <p>Our Users Say It Best </p>
+                    </span><span class="home-elem-93">
+                        <p>PlantCheck has been a game-changer for my home
+                            garden. The early detection system has saved many
+                            of my plants from diseases. </p>
+                    </span>
+                    <div class="home-elem-101">
+                        <div class="home-elem-99"> <i
+                                class="fas fa-star home-elem-95"></i><i
+                                class="fas fa-star home-elem-96"></i><i
+                                class="fas fa-star home-elem-97"></i><i
+                                class="fas fa-star home-elem-98"></i><i
+                                class="fas fa-star home-elem-94"></i></div><span
+                            class="home-elem-100 home-elem-100">
+                            <p>Review from TrustPilot</p>
+                        </span><span class="home-elem-100 home-elem-100">
+                            <p>Review from TrustPilot</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="home-elem-115"> <span class="home-elem-103">
+                        <img
+                            src="{{ url_for('static', filename='assets/ff2zdhvvylnqn4ec204i.jpg') }}">
+                    </span>
+                    <div class="home-elem-114"> <span class="home-elem-104">
+                            <p>Home Garden Co. </p>
+                        </span><span class="home-elem-105">
+                            <p>I highly recommend PlantCheck. It's easy to use
+                                and highly accurate. </p>
+                        </span>
+                        <div class="home-elem-113">
+                            <div class="home-elem-111"> <i
+                                    class="fas fa-star home-elem-106"></i><i
+                                    class="fas fa-star home-elem-110"></i><i
+                                    class="fas fa-star home-elem-109"></i><i
+                                    class="fas fa-star home-elem-108"></i><i
+                                    class="fas fa-star home-elem-107"></i></div>
+                            <span class="home-elem-112">
+                                <p>John Smith </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-elem-22" id="home-elem-22"> <span class="home-elem-21">
+                <p>Recognize early signs of diseases </p>
+            </span>
+            <div class="home-elem-20">
+                <div class="home-elem-19"> <span class="home-elem-23">
+                        <img
+                            src="{{ url_for('static', filename='assets/e8svqgdcu6lohljujs1q.jpg') }}">
+                    </span>
+                    <div class="home-elem-24">
+                        <div class="home-elem-25">
+                            <div class="home-elem-26"> <span
+                                    class="home-elem-27">
+                                    <p>What diseases can be detected? </p>
+                                </span><span class="home-elem-64">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-849-2svg_1688548446_41989.svg') }}">
+                                </span><span class="home-elem-63">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-851svg_1688548446_36194.svg') }}">
+                                </span></div><span class="home-elem-28">
+                                <p>Our system can identify a wide range of
+                                    common and uncommon plant diseases. </p>
+                            </span>
+                        </div>
+                        <div class="home-elem-40">
+                            <div class="home-elem-38"> <span
+                                    class="home-elem-37">
+                                    <p>How accurate is your system? </p>
+                                </span><span class="home-elem-68">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-849-2svg_1688548446_41989.svg') }}">
+                                </span><span class="home-elem-65">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-851svg_1688548446_36194.svg') }}">
+                                </span></div><span class="home-elem-39">
+                                <p>Our AI-driven system boasts a high accuracy
+                                    rate, improved regularly through updating
+                                    the
+                                    plant diseases database. </p>
+                            </span>
+                        </div>
+                        <div class="home-elem-36">
+                            <div class="home-elem-34"> <span
+                                    class="home-elem-33">
+                                    <p>Are there costs involved? </p>
+                                </span><span class="home-elem-69">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-849-2svg_1688548446_41989.svg') }}">
+                                </span><span class="home-elem-66">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-851svg_1688548446_36194.svg') }}">
+                                </span></div><span class="home-elem-35">
+                                <p>The initial consultation is free with
+                                    additional services at a nominal charge.
+                                </p>
+                            </span>
+                        </div>
+                        <div class="home-elem-32">
+                            <div class="home-elem-30"> <span
+                                    class="home-elem-29">
+                                    <p>How do I start using the service? </p>
+                                </span><span class="home-elem-70">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-849-2svg_1688548446_41989.svg') }}">
+                                </span><span class="home-elem-67">
+                                    <img
+                                        src="{{ url_for('static', filename='assets/path-851svg_1688548446_36194.svg') }}">
+                                </span></div><span class="home-elem-31">
+                                <p>Register on our website and upload a clear
+                                    image of your plant for analysis. </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-elem-44">
+            <div class="home-elem-42">
+                <div class="home-elem-41"> <span class="home-elem-43">
+                        <p>Try PlantCheck Today </p>
+                    </span>
+                    <div class="home-elem-45"> <span class="home-elem-46">
+                            <p>Join us and ensure your garden's health. Every
+                                plant deserves the best care. </p>
+                        </span><button class="home-elem-47">
+                            <p>Join Now </p>
+                        </button></div>
+                </div>
+            </div>
+            <div class="home-elem-48">
+                <div class="home-elem-49"> <span class="home-elem-50">
+                        <p>PlantCheck </p>
+                    </span><span class="home-elem-51">
+                        <p>Helping home gardeners and professional growers
+                            prevent plant diseases. </p>
+                    </span></div>
+                <div class="home-elem-72">
+                    <div class="home-elem-55"> <span class="home-elem-52"><a
+                                href="#home-elem-15" class="link"
+                                target="_self">
+                                <p>About Us </p>
+                            </a> </span><span class="home-elem-53">
+                            <p>FAQ </p>
+                        </span><span class="home-elem-54"><a
+                                href="#home-elem-22" class="link"
+                                target="_self">
+                                <p>Pricing </p>
+                            </a> </span></div>
+                    <div class="home-elem-59"> <span class="home-elem-56">
+                            <p>Twitter</p>
+                        </span><span class="home-elem-57">
+                            <p>Facebook</p>
+                        </span><span class="home-elem-58">
+                            <p>Instagram</p>
+                        </span></div>
+                </div>
+            </div>
+            <div class="home-elem-60"> <span class="home-elem-61">
+                    <p>©2023 PlantCheck. All rights reserved. </p>
+                </span></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

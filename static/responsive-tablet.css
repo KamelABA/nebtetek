@@ -1,0 +1,466 @@
+@media (max-width:1199px) {
+    .page-404-elem-7 {
+        width: 100%;
+        max-width: 400px
+    }
+
+    .page-404-elem-6 {
+        flex-direction: column;
+        align-items: center;
+        background-color: #00000066;
+        top: 70px;
+        height: fit-content;
+        width: 100%;
+        display: none;
+        position: absolute
+    }
+
+    .page-404-elem-8 {
+        display: none
+    }
+
+    .page-404-elem-9 {
+        width: auto;
+        height: auto;
+        display: block
+    }
+
+    .page-404-elem-11 {
+        font-size: 60px;
+        line-height: 70px
+    }
+
+    .page-404-elem-15 {
+        display: none
+    }
+}
+
+
+@media (max-width:991px) {
+    .home-elem-4 {
+        width: 100%;
+        
+    }
+    
+   
+    .home-elem-5 {
+        flex-direction: column;
+        align-items: center;
+        background-color: #cccccc5f;
+        margin-top: 0;
+        margin-left: 200px;
+        width: 100%;
+    }
+    .home-elem-9 {
+        margin-left: -130px;
+    }
+
+    
+
+    .home-elem-62 {
+        background-image: url(https://res.cloudinary.com/dbyioi2qq/q_auto/v1688359091/static/group-488png_1688358979_12271.png);
+        height: 20px;
+        width: 30px;
+        display: flex
+    }
+
+    .home-elem-11 {
+        font-size: 60px;
+        line-height: 70px
+    }
+
+    .home-elem-13 {
+        max-width: 600px;
+        min-height: 250px
+    }
+
+    .home-elem-14 {
+        max-width: 500px;
+        min-height: 250px
+    }
+
+    .home-elem-16 {
+        max-width: 600px
+    }
+
+    .home-elem-17 {
+        max-width: 600px;
+        min-height: 300px
+    }
+
+    .home-elem-88 {
+        padding: 60px 16px 50px 16px
+    }
+
+    .home-elem-77 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 50px
+    }
+
+    .home-elem-76 {
+        padding: 0px 0px 0px 0px
+    }
+
+    .home-elem-89 {
+        display: none
+    }
+
+    .home-elem-82 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 50px
+    }
+
+    .home-elem-81 {
+        padding: 0px 0px 0px 0px
+    }
+
+    .home-elem-90 {
+        display: none
+    }
+    .home-elem-9:hover {
+        background-color: #ccc;
+        color: black;
+    }
+
+    .home-elem-87 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 50px
+    }
+
+    .home-elem-86 {
+        padding: 0px 0px 0px 0px
+    }
+
+    .home-elem-91 {
+        display: none
+    }
+
+    .home-elem-117 {
+        padding: 50px 16px 50px 16px
+    }
+
+    .home-elem-116 {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+
+    .home-elem-95 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-96 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-97 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-98 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-94 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-115 {
+        flex-wrap: wrap;
+        row-gap: 20px
+    }
+
+    .home-elem-106 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-110 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-109 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-108 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-107 {
+        width: auto;
+        height: auto
+    }
+
+    .home-elem-19 {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 50px
+    }
+
+    .home-elem-41 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    .home-elem-43 {
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        max-width: 400px
+    }
+
+    .home-elem-45 {
+        align-items: center
+    }
+
+    .home-elem-46 {
+        text-align: center;
+        max-width: 400px
+    }
+
+    .home-elem-48 {
+        flex-wrap: wrap;
+        row-gap: 50px
+    }
+
+    .home-elem-60 {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+
+@media (max-width:1199px) {
+    .leaf-detection-elem-58 {
+        width: 100%;
+        left: 0;
+        
+    }
+
+    .leaf-detection-elem-57 { 
+        background-color: #4a90e2;
+        top: 70px;
+        height: fit-content;
+        width: 100%;
+        display: none;
+        position: absolute;
+    }
+
+  
+
+    
+
+    .leaf-detection-elem-60 {
+        background-image: url(https://res.cloudinary.com/dbyioi2qq/q_auto/v1688359091/static/group-488png_1688358979_12271.png);
+        height: 20px;
+        width: 30px;
+        display: flex;
+
+    }
+
+    .leaf-detection-elem-62 {
+        font-size: 60px;
+        line-height: 70px
+    }
+
+    .leaf-detection-elem-5 {
+        padding: 55px 0px 0px 0px;
+        flex-direction: column
+    }
+
+    .leaf-detection-elem-4 {
+        padding: 0px 16px 0px 16px;
+        align-items: center
+    }
+
+    .leaf-detection-elem-2 {
+        align-items: center;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-3 {
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-10 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        row-gap: 30px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.66)100%, rgb(181, 255, 252)100%) 0% 0% / auto no-repeat no-repeat scroll border-box padding-box
+    }
+
+    .leaf-detection-elem-9 {
+        padding: 0px 16px 0px 16px;
+        align-items: center;
+        width: 100%
+    }
+
+    .leaf-detection-elem-7 {
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-8 {
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-12 {
+        margin-top: 20px;
+        position: relative
+    }
+
+    .leaf-detection-elem-6 {
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+
+    .leaf-detection-elem-18 {
+        padding: 55px 0px 0px 0px;
+        flex-direction: column
+    }
+
+    .leaf-detection-elem-17 {
+        padding: 0px 16px 0px 16px;
+        align-items: center
+    }
+
+    .leaf-detection-elem-14 {
+        align-items: center;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-15 {
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-24 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        row-gap: 30px;
+        background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.66)100%, rgb(181, 255, 252)100%);
+        background-position: 0% 0%;
+        background-size: auto auto;
+        background-repeat: no-repeat no-repeat;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-origin: padding-box
+    }
+
+    .leaf-detection-elem-23 {
+        padding: 0px 16px 0px 16px;
+        align-items: center;
+        width: 100%
+    }
+
+    .leaf-detection-elem-20 {
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-21 {
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-22 {
+        margin-top: 20px;
+        position: relative
+    }
+
+    .leaf-detection-elem-19 {
+        width: 300px;
+        height: 300px;
+        display: flex
+    }
+
+    .leaf-detection-elem-30 {
+        padding: 55px 0px 0px 0px;
+        flex-direction: column
+    }
+
+    .leaf-detection-elem-29 {
+        padding: 0px 16px 0px 16px;
+        align-items: center
+    }
+
+    .leaf-detection-elem-26 {
+        align-items: center;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-27 {
+        text-align: center;
+        max-width: none
+    }
+
+    .leaf-detection-elem-35 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    .leaf-detection-elem-31 {
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        max-width: 400px
+    }
+
+    .leaf-detection-elem-34 {
+        align-items: center
+    }
+
+    .leaf-detection-elem-32 {
+        text-align: center;
+        max-width: 400px
+    }
+
+    .leaf-detection-elem-49 {
+        flex-wrap: wrap;
+        row-gap: 50px
+    }
+
+    .leaf-detection-elem-51 {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}

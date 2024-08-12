@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0545)https://auth.openai.com/authorize?client_id=TdJIcbe16WoTHtN95nyywh5E4yOo6ItG&scope=openid%20email%20profile%20offline_access%20model.request%20model.read%20organization.read%20organization.write&response_type=code&redirect_uri=https%3A%2F%2Fchatgpt.com%2Fapi%2Fauth%2Fcallback%2Flogin-web&audience=https%3A%2F%2Fapi.openai.com%2Fv1&device_id=4e73e953-10bf-4157-8502-cf1278d64e80&prompt=login&screen_hint=login&state=Qn1LJmEw2yQ9aL62bhJiA_UndCsFFLqs0MoUD2bjGs8&code_challenge=rM_PJHPp0xNbHVNvXJNgywIXXrMRGMczR1rnvghKxdg&code_challenge_method=S256 -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - PlantDetect</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Login.css') }}">
+</head>
+
+<body>
+    <div id="root">
+        <div class="page-wrapper">
+            <header class="oai-header">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="img-fluid"
+                    style="height: 80px;width: 80px;">
+
+            </header>
+            <main class="main-container">
+                <section class="content-wrapper" style="
+                    top: -100px;
+                ">
+                    <div class="title-wrapper">
+                        <h1 class="title">Create an
+                            account
+                        </h1>
+                    </div>
+                    <form action="/adduser" method="post">
+                        <div class="login-container">
+                            <div class="input-wrapper">
+                                <input class="email-input" inputmode="email" type="email" id="email-input" name="email"
+                                    autocomplete="username" autocapitalize="none" spellcheck="false" required
+                                    placeholder=" ">
+                                <label class="email-label" for="email-input">Email address</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="email-input" inputmode="email" type="password" id="password-input"
+                                    name="password" autocomplete="current-password" autocapitalize="none"
+                                    spellcheck="false" required placeholder=" ">
+                                <label class="email-label" for="password-input">Password*</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="email-input" inputmode="email" type="name" id="name-input"
+                                    name="name" autocomplete="current-name" autocapitalize="none"
+                                    spellcheck="false" required placeholder=" ">
+                                <label class="email-label" for="name-input">name*</label>
+                            </div>
+                            <button type="submit" class="continue-btn">Continue</button>
+                        </div>
+                    </form>
+
+                    <p class="other-page">Already have an account? <a class="other-page-link" href="/login">Login
+                        </a></p>
+                    <script>
+
+                    </script>
+</body>
+
+</html>

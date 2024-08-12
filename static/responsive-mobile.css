@@ -1,0 +1,711 @@
+@media (max-width:767px) {
+    .page-404-elem-7 {
+        width: 100%;
+        max-width: 400px
+    }
+
+    .page-404-elem-6 {
+        flex-direction: column;
+        align-items: center;
+        background-color: #00000060;
+        top: 70px;
+        height: fit-content;
+        width: 100%;
+        display: none;
+        position: absolute
+    }
+
+    .page-404-elem-8 {
+        display: none
+    }
+
+    .page-404-elem-11 {
+        font-size: 45px;
+        line-height: 55px
+    }
+
+    .page-404-elem-15 {
+        display: none
+    }
+}
+
+
+@media (max-width:767px) {
+    .home-elem-4 {
+        max-width: none
+    }
+
+    .home-elem-5 {
+        flex-direction: column;
+        align-items: center;
+        background-color: #cccccc5f;
+        margin-top: 0;
+        margin-left: 200px;
+    }
+    .home-elem-9 {
+        margin-left: -130px;
+    }
+
+    .home-elem-8:hover,
+    .home-elem-6:hover,
+    .home-elem-7:hover {
+        background-color: white;
+    }
+
+    .home-elem-62 {
+        background-image: url(https://res.cloudinary.com/dbyioi2qq/q_auto/v1688359091/static/group-488png_1688358979_12271.png);
+        background-size: contain;
+        height: 16px;
+        width: 25px
+    }
+
+    .home-elem-11 {
+        font-size: 45px;
+        line-height: 55px
+    }
+
+    .home-elem-13 {
+        height: fit-content;
+        max-width: 388px;
+        min-height: 207px
+    }
+
+    .home-elem-14 {
+        height: 224px;
+        max-width: 345px;
+        min-height: auto
+    }
+
+    .home-elem-18 {
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    .home-elem-16 {
+        height: 100px;
+        max-width: 368px;
+        min-height: 265px
+    }
+
+    .home-elem-17 {
+        height: 100px;
+        max-width: 388px;
+        min-height: 260px
+    }
+
+    .home-elem-88 {
+        padding: 50px 16px 50px 16px
+    }
+
+    .home-elem-77 {
+        padding: 20px 0px 20px 0px;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        row-gap: 50px;
+        align-items: center
+    }
+
+    .home-elem-76 {
+        padding: 0px 0px 0px 0px
+    }
+
+    .home-elem-74 {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 300px
+    }
+
+    .home-elem-75 {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 380px
+    }
+
+    .home-elem-73 {
+        height: 360px;
+        max-width: 390px
+    }
+
+    .home-elem-82 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        align-items: center
+    }
+
+    .home-elem-78 {
+        height: 360px;
+        max-width: 390px
+    }
+
+    .home-elem-81 {
+        padding: 0px 0px 0px 0px
+    }
+
+    .home-elem-79 {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 300px
+    }
+
+    .home-elem-80 {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 360px
+    }
+
+    .home-elem-87 {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        row-gap: 50px;
+        align-items: center
+    }
+
+    .home-elem-86 {
+        padding: 0px 0px 0px 0px
+    }
+
+    .home-elem-84 {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 300px
+    }
+
+    .home-elem-85 {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 360px
+    }
+
+    .home-elem-83 {
+        height: 360px;
+        max-width: 390px
+    }
+
+    .home-elem-117 {
+        padding: 50px 16px 50px 16px
+    }
+
+    .home-elem-116 {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+
+    .home-elem-102 {
+        padding: 0px 0px 0px 0px;
+        align-items: center
+    }
+
+    .home-elem-92 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        max-width: 250px
+    }
+
+    .home-elem-93 {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 300px
+    }
+
+    .home-elem-101 {
+        padding: 10px 0px 30px 0px;
+        justify-content: center;
+        align-items: center
+    }
+
+    .home-elem-99 {
+        width: fit-content
+    }
+
+    .home-elem-95 {
+        font-size: 12px;
+        line-height: 22px
+    }
+
+    .home-elem-96 {
+        font-size: 12px;
+        line-height: 22px
+    }
+
+    .home-elem-97 {
+        font-size: 12px;
+        line-height: 22px
+    }
+
+    .home-elem-98 {
+        font-size: 12px;
+        line-height: 22px
+    }
+
+    .home-elem-94 {
+        font-size: 12px;
+        line-height: 22px
+    }
+
+    .home-elem-100 {
+        font-size: 14px;
+        line-height: 24px;
+        width: fit-content
+    }
+
+    .home-elem-115 {
+        flex-wrap: wrap;
+        column-gap: 15px;
+        row-gap: 20px;
+        padding: 10px 10px 10px 10px;
+        max-width: 350px
+    }
+
+    .home-elem-103 {
+        height: 130px;
+        max-width: 130px
+    }
+
+    .home-elem-114 {
+        width: fit-content
+    }
+
+    .home-elem-104 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 0px 0px 3px 0px
+    }
+
+    .home-elem-105 {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 0px 0px 5px 0px;
+        max-width: 170px
+    }
+
+    .home-elem-111 {
+        width: fit-content
+    }
+
+    .home-elem-106 {
+        font-size: 10px;
+        line-height: 20px
+    }
+
+    .home-elem-110 {
+        font-size: 10px;
+        line-height: 20px
+    }
+
+    .home-elem-109 {
+        font-size: 10px;
+        line-height: 20px
+    }
+
+    .home-elem-108 {
+        font-size: 10px;
+        line-height: 20px
+    }
+
+    .home-elem-107 {
+        font-size: 10px;
+        line-height: 20px
+    }
+
+    .home-elem-112 {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 0px 0px 0px 0px;
+        width: fit-content
+    }
+
+    .home-elem-21 {
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    .home-elem-19 {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 50px
+    }
+
+    .home-elem-23 {
+        height: 305px;
+        max-width: 345px
+    }
+
+    .home-elem-24 {
+        align-items: center
+    }
+
+    .home-elem-25 {
+        max-width: 345px
+    }
+
+    .home-elem-27 {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .home-elem-28 {
+        font-size: 14px;
+        line-height: 24px
+    }
+
+    .home-elem-40 {
+        max-width: 345px
+    }
+
+    .home-elem-3 {
+        margin-left: 0;
+    }
+    .home-elem-3 p {
+        margin-left: 0px;
+       
+    }
+
+    .home-elem-37 {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .home-elem-39 {
+        font-size: 14px;
+        line-height: 24px
+    }
+
+    .home-elem-36 {
+        max-width: 345px
+    }
+
+    .home-elem-33 {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .home-elem-35 {
+        font-size: 14px;
+        line-height: 24px
+    }
+
+    .home-elem-32 {
+        max-width: 345px
+    }
+
+    .home-elem-29 {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .home-elem-31 {
+        font-size: 14px;
+        line-height: 24px
+    }
+
+    .home-elem-41 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    .home-elem-43 {
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+        max-width: 300px
+    }
+
+    .home-elem-45 {
+        align-items: center
+    }
+
+    .home-elem-46 {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 300px
+    }
+
+    .home-elem-48 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        align-items: center
+    }
+
+    .home-elem-49 {
+        align-items: center
+    }
+
+    .home-elem-51 {
+        text-align: center
+    }
+
+    .home-elem-60 {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+
+@media (max-width:767px) {
+    .leaf-detection-elem-58 {
+        width: 100%;
+        left: 0;
+        background-color: #cccccc5f;
+        flex-direction: row;
+
+    }
+
+    .leaf-detection-elem-54:hover,
+    .leaf-detection-elem-56:hover,
+    .leaf-detection-elem-55:hover {
+        width: 100%;
+        background-color: #ccc;
+
+    }
+
+    .leaf-detection-elem-59:hover {
+        background-color: #ccc;
+        color: black;
+    }
+
+    .leaf-detection-elem-57 {
+
+
+        background-color: #4a90e2
+    }
+
+    .leaf-detection-elem-60 {
+        background-image: url(https://res.cloudinary.com/dbyioi2qq/q_auto/v1688359091/static/group-488png_1688358979_12271.png);
+        background-size: contain;
+        height: 16px;
+        width: 25px;
+
+    }
+
+    .leaf-detection-elem-62 {
+        font-size: 45px;
+        line-height: 55px;
+        color: black;
+    }
+
+
+
+
+
+
+
+
+    .leaf-detection-elem-5 {
+        padding: 55px 0px 0px 0px;
+        flex-direction: column;
+
+    }
+
+    .leaf-detection-elem-1 {
+        width: 300px;
+        height: 300px
+    }
+
+    .leaf-detection-elem-4 {
+        padding: 0px 16px 0px 16px
+    }
+
+    .leaf-detection-elem-2 {
+        align-items: center;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center
+    }
+
+    .leaf-detection-elem-3 {
+        text-align: center
+    }
+
+    .leaf-detection-elem-11 {
+        text-align: center;
+        display: block;
+
+    }
+
+    .leaf-detection-elem-10 {
+        padding: 100px 0px 100px 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.69)100%, rgb(181, 255, 252)100%);
+        background-position: 0% 0%;
+        background-size: auto auto;
+        background-repeat: no-repeat no-repeat;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-origin: padding-box
+    }
+
+    .leaf-detection-elem-9 {
+        padding: 0px 16px 50px 16px
+    }
+
+    .leaf-detection-elem-7 {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 20px 0px 0px 0px;
+        text-align: center
+    }
+
+    .leaf-detection-elem-8 {
+        text-align: center
+    }
+
+    .leaf-detection-elem-12 {
+
+        position: relative
+    }
+
+    .leaf-detection-elem-6 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .leaf-detection-elem-18 {
+        padding: 55px 0px 0px 0px;
+        flex-direction: column
+    }
+
+    .leaf-detection-elem-13 {
+        width: 300px;
+        height: 300px
+    }
+
+    .leaf-detection-elem-17 {
+        padding: 0px 16px 0px 16px
+    }
+
+    .leaf-detection-elem-14 {
+        align-items: center;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center
+    }
+
+    .leaf-detection-elem-15 {
+        text-align: center
+    }
+
+
+
+    .leaf-detection-elem-24 {
+        padding: 100px 0px 100px 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.69)100%, rgb(181, 255, 252)100%);
+        background-position: 0% 0%;
+        background-size: auto auto;
+        background-repeat: no-repeat no-repeat;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-origin: padding-box
+    }
+
+    .leaf-detection-elem-23 {
+        padding: 0px 16px 50px 16px
+    }
+
+    .leaf-detection-elem-20 {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 20px 0px 0px 0px;
+        text-align: center
+    }
+
+    .leaf-detection-elem-21 {
+        text-align: center
+    }
+
+    .leaf-detection-elem-22 {
+
+        position: relative
+    }
+
+    .leaf-detection-elem-19 {
+        width: 300px;
+        height: 300px
+    }
+
+    .leaf-detection-elem-30 {
+        padding: 55px 0px 0px 0px;
+        flex-direction: column
+    }
+
+    .leaf-detection-elem-25 {
+        width: 300px;
+        height: 300px
+    }
+
+    .leaf-detection-elem-29 {
+        padding: 0px 16px 0px 16px
+    }
+
+    .leaf-detection-elem-26 {
+        align-items: center;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center
+    }
+
+    .leaf-detection-elem-27 {
+        text-align: center
+    }
+
+
+
+    .leaf-detection-elem-35 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    .leaf-detection-elem-31 {
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+        max-width: 300px
+    }
+
+    .leaf-detection-elem-34 {
+        align-items: center
+    }
+
+    .leaf-detection-elem-32 {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 300px
+    }
+
+    .leaf-detection-elem-49 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        align-items: center
+    }
+
+    .leaf-detection-elem-39 {
+        align-items: center
+    }
+
+    .leaf-detection-elem-38 {
+        text-align: center
+    }
+
+    .leaf-detection-elem-51 {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .dropdown-container {
+        align-items: center;
+       
+    }
+}

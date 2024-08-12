@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                 Settings
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 data-i18n="settings">Settings</h1>
+        <div>
+            <select id="lang" >
+                <option value="en" selected>English</option>
+                <option value="ar">Arabic</option>
+            </select>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+    <script src="{{ url_for('static', filename='translate.js') }}"></script>
+</body>
+
+</html>
