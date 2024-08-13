@@ -3,4 +3,5 @@ numpy==1.21.0
 opencv-python==4.5.3
 Keras==2.6.0
 tensorflow==2.7.0
-abab
+gunicorn==23.0.0
+packaging==24.1
