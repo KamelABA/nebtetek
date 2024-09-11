@@ -1,7 +1,6 @@
 Flask==2.1.0
 numpy==1.21.0
 opencv-python==4.5.3.56
-Keras==2.6.0
 tensorflow==2.7.0
 gunicorn==23.0.0
 packaging==24.1
