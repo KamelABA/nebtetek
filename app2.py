@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, session, url_for
+from flask import Flask, render_template, request, redirect, send_from_directory, session, url_for
 import cv2
 import tensorflow as tf
 import numpy as np
@@ -35,6 +35,9 @@ def home():
     return render_template('home.html')
 
 
+
+
+
 @app.route('/login')
 def Login():
      error = request.args.get('error')
@@ -69,21 +72,25 @@ def detect_plant():
     else:
         return redirect(url_for('Login', error='User not found or incorrect password.', email=email, password=password, id=user_id))
 
-@app.route('/settings')
+
+
+visitor_count = 0
+
+@app.route('/settings', methods=['GET', 'POST'])
 def settings():
+    global visitor_count
+    visitor_count += 1  # Increment the visitor count on each visit
+
+    # Handle POST request for language selection
     if request.method == 'POST':
-       
-        theme = request.form.get('theme')
-        notifications = request.form.get('notifications')
+        lang = request.form.get('lang')  # Get selected language from the form
+        session['lang'] = lang  # Store the selected language in the session
+        return redirect(url_for('settings'))  # Redirect to reflect the changes
 
-        
-        session['theme'] = theme
-        session['notifications'] = notifications
+    # Default language is English if not set in the session
+    lang = session.get('lang', 'en')
 
-        return redirect(url_for('settings'))  # Redirect to the settings page after submission
-
-    # Render settings page
-    return render_template('settings.html')
+    return render_template('settings.html', lang=lang, visitor_count=visitor_count)
 
 @app.route('/admin')
 def admin():
@@ -257,6 +264,7 @@ def leaf():
         return render_template('leaf-detection.html', name=name, email=email, id=user_id)
     else:
         return "Session data missing."
+
 
 
 
@@ -587,6 +595,27 @@ def get_apple_disease(prediction):
             *get_disease_info("Apple : Healthy"),
             *get_Supplement_info("Apple : Healthy")
         ]
+    
+def get_visitor_ip():
+    if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
+        return request.environ['REMOTE_ADDR']
+    else:
+        return request.environ['HTTP_X_FORWARDED_FOR']
+
+@app.route('/')
+def index():
+    visitor_ip = get_visitor_ip()
+    user_agent = request.headers.get('User-Agent')
+    
+    # Log visitor info (in this example, print to console or save to a file)
+    log_visitor_info(visitor_ip, user_agent)
+    
+    return f"Welcome! Your IP: {visitor_ip}, Your User-Agent: {user_agent}"
+
+# Log visitor info to console (can be modified to log to a file or database)
+def log_visitor_info(ip, user_agent):
+    print(f"Visitor IP: {ip}, User-Agent: {user_agent}")
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=False)
 

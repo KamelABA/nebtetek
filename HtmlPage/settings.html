@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}">
+
+    
 </head>
 
 <body>
     <nav>
         <ul>
             <li>
-                 Settings
+                Settings
             </li>
         </ul>
     </nav>
@@ -20,11 +23,17 @@
     <main>
         <h1 data-i18n="settings">Settings</h1>
         <div>
-            <select id="lang" >
-                <option value="en" selected>English</option>
-                <option value="ar">Arabic</option>
+            <p>Selected language: {{ lang }}</p>
+            <select name="lang" id="lang">
+                <option value="en" {% if lang == 'en' %}selected{% endif %}>English</option>
+                <option value="ar" {% if lang == 'ar' %}selected{% endif %}>Arabic</option>
             </select>
         </div>
+        <div class="total-visitors"></div>
+        <h2>Total Visitors</h2>
+        <p>Number of visitors: {{ visitor_count }}</p>
+        </div>
+        <a href="/leaf-detection"><p>leaf page</p></a>
     </main>
 
     <footer>

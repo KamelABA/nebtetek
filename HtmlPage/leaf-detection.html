@@ -48,7 +48,7 @@
         href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Arimo:100,200,300,400,500,600,700,800,900">
-
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}">
 
 
 </head>
@@ -97,7 +97,8 @@
 
             </div>
             <div class="dropdown-container">
-                <details class="dropdown right">
+                <!-- dropdown f class dirou -->
+                <details class="right dropdown">
                     <summary class="avatar">
                         <img src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp">
                     </summary>
@@ -126,7 +127,15 @@
                                 <span class="material-symbols-outlined"></span> Logout
                             </a>
                         </li>
+                        <li>
+                            <p>Selected language: {{ lang }}</p>
+                            <select id="lang">
+                                <option value="en" selected>English</option>
+                                <option value="ar">Arabic</option>
+                            </select>
+                        </li>
                     </ul>
+
                 </details>
             </div>
             <div id="mySidenav" class="sidenav">
@@ -153,9 +162,10 @@
         </nav>
         <div class="leaf-detection-elem-64">
             <span class="leaf-detection-elem-62">
-                <p>Detect your plant Disease</p>
+                <p data-i18n="detect">Detect your plant Disease</p>
             </span>
-            <span class="leaf-detection-elem-63">Act promptly to identify plant diseases and take the necessary
+            <span class="leaf-detection-elem-63" data-i18n="act">Act promptly to identify plant diseases and take the
+                necessary
                 steps to guarantee that your garden not only survives but thrives in its full glory. Embark on your
                 gardening journey now.
             </span>
@@ -373,6 +383,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='translate.js') }}"></script>
+
 </body>
 
 </html>
